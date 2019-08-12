@@ -26,7 +26,7 @@
   "dependencies": {
     "debug": "^4.1.1",
     "mobx": "^5.9.4",
-    "mobx-react": "^5.4.3",
+    "mobx-react": "^6.1.3",
     "moment-timezone": "^0.5.23",
     "react": "^16.8.6",
     "react-dom": "^16.9.0",
