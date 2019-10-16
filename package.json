@@ -27,7 +27,7 @@
     "debug": "^4.1.1",
     "mobx": "^5.14.0",
     "mobx-react": "^6.1.4",
-    "moment-timezone": "^0.5.26",
+    "moment-timezone": "^0.5.27",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-flexview": "^4.0.4"
