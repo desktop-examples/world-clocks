@@ -28,7 +28,7 @@
     "mobx": "^5.14.2",
     "mobx-react": "^6.1.4",
     "moment-timezone": "^0.5.27",
-    "react": "^16.10.2",
+    "react": "^16.11.0",
     "react-dom": "^16.10.2",
     "react-flexview": "^4.0.4"
   },
