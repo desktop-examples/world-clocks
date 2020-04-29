@@ -1,13 +1,11 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");
 const webpack = require("webpack");
 const autoprefixer = require("autoprefixer");
 const HTMLInlineCSSWebpackPlugin = require("html-inline-css-webpack-plugin").default;
-
-const buildFolder = "public";
 
 module.exports = {
     bail: true,
@@ -17,7 +15,7 @@ module.exports = {
     output: {
         filename: "[name].[chunkhash:8].js",
         chunkFilename: "[name].[chunkhash:8].js",
-        path: path.join(__dirname, buildFolder),
+        path: path.join(__dirname, "public"),
         publicPath: "/"
     },
     resolve: {
@@ -86,7 +84,7 @@ module.exports = {
         runtimeChunk: true,
     },
     plugins: [
-        new CleanWebpackPlugin([buildFolder]),
+        new CleanWebpackPlugin(),
         new CopyWebpackPlugin([{
             from: 'src/data/manifest.json'
         }]),
@@ -134,13 +132,8 @@ module.exports = {
                 minifyCSS: true,
                 minifyURLs: true,
             },
-            mobile: true,
+            mobile: false,
             title: "World Clocks"
         }),
-        new HTMLInlineCSSWebpackPlugin({
-            filter(fileName) {
-                return fileName.includes('main');
-            },
-        })
     ]
 };
