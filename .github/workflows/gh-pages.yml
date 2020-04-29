@@ -1,5 +1,5 @@
 ---
-name: ci
+name: gh-pages
 on:
   push:
     branches:

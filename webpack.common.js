@@ -5,7 +5,6 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");
 const webpack = require("webpack");
 const autoprefixer = require("autoprefixer");
-const HTMLInlineCSSWebpackPlugin = require("html-inline-css-webpack-plugin").default;
 
 module.exports = {
     bail: true,
@@ -104,7 +103,7 @@ module.exports = {
             bodyHtmlSnippet: "<noscript>You need to enable JavaScript to run this app!</noscript>",
             lang: "en",
             links: [{
-                href: "/desktop/examples/world-clocks/manifest.json",
+                href: "/world-clocks/manifest.json",
                 rel: "manifest"
             }],
             meta: [{
