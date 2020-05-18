@@ -84,9 +84,11 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(),
-        new CopyWebpackPlugin([{
-            from: 'src/data/manifest.json'
-        }]),
+        new CopyWebpackPlugin({
+            patterns: [{
+                from: 'src/data/manifest.json'
+            }]
+        }),
         new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
         new webpack.NormalModuleReplacementPlugin(
             /data[\\\/]packed[\\\/]latest.json$/,
