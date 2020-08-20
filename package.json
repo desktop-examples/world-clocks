@@ -28,7 +28,7 @@
     "moment-timezone": "^0.5.31",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-flexview": "^5.0.0"
+    "react-flexview": "^6.0.0"
   },
   "devDependencies": {
     "@types/debug": "^4.1.5",
