@@ -1,0 +1,9 @@
+{
+    "name": "World Clocks",
+    "short_name": "Clocks",
+    "start_url": "/world-clocks",
+    "theme_color": "#1d1d26",
+    "background_color": "#1d1d26",
+    "display": "standalone",
+    "orientation": "portrait-primary"
+}
