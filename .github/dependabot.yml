@@ -1,0 +1,34 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  reviewers:
+  - markmcdowell
+  ignore:
+  - dependency-name: "@types/node"
+    versions:
+    - 14.14.23
+    - 14.14.32
+    - 15.0.0
+    - 15.0.1
+  - dependency-name: ts-loader
+    versions:
+    - 9.0.0
+    - 9.1.0
+    - 9.1.1
+  - dependency-name: css-loader
+    versions:
+    - 5.2.3
+  - dependency-name: webpack
+    versions:
+    - 5.28.0
+  - dependency-name: autoprefixer
+    versions:
+    - 10.2.4
+    - 10.2.5
+  commit-message:
+    prefix: chore
+    include: scope
